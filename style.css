@@ -8,14 +8,113 @@ body {
     outline: none;
 }
 
+/* *********** NAVBAR MENU ********** */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bbi-nav-background {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 0px;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-row a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-row a:hover {
+    background-color: #575757;
+}
+
+.bbi-logo {
+    width: 50%;
+}
+
+.tested_tried_true-logo {
+    width: 20%;
+}
+
+.bbi-nav-background {
+    background-image: url('images/bbi_background.jpg');
+    background-size: cover;
+}
+
+.bbi-menu-links {
+    background-color: #f6d77f;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bbi-nav-link a {
+    color: black !important;
+    font-weight: 600;
+}
+
+.bbi-nav-link a:hover {
+    color: rgb(75, 75, 75) !important;
+}
+
+.toll-number a {
+    color: #f6d77f !important;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 8px;
+    left: 0;
+    background-color: #000000;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+}
+
+.hover-underline-animation.center::after {
+    transform-origin: bottom center;
+}
+
+.hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+}
+
+/* ********** TIMELINE CAROUSEL ****************** */
 .timeline-carousel {
     padding: 86px 6.9444% 90px 6.9444%;
     position: relative;
     overflow: hidden;
 }
 
-/*
-.timeline-carousel:after,
+/* .timeline-carousel:after,
 .timeline-carousel:before {
     content: "";
     position: absolute;
@@ -26,9 +125,7 @@ body {
     background-color: #1d1d1e;
     z-index: 3;
     width: 6.9444%;
-}
-*/
-
+} */
 .timeline-carousel:after {
     left: 0;
 }
@@ -259,3 +356,20 @@ body {
     margin-right: 8px;
     color: #fff;
 }
+
+@media (max-width: 991px) {
+    .nav-row {
+        flex-direction: column;
+    }
+
+    .bbi-nav-links {
+        position: relative;
+    }
+
+    .bbi-menu-links {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+    }
+}
+
