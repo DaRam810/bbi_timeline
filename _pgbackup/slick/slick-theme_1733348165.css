@@ -31,7 +31,6 @@
   padding: 0;
   border: none;
   outline: none;
-  z-index: 1000;
 }
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
@@ -52,9 +51,9 @@
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1;
-  color: #ffffff;
+  color: #e61313;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   /* -moz-osx-font-smoothing: grayscale */
@@ -68,24 +67,24 @@
   right: -25px;
 }
 .slick-prev:before {
-  content: "❮";
+  content: "←";
 }
 [dir=rtl] .slick-prev:before {
-  content: "❯";
+  content: "→";
 }
 
 .slick-next {
-  right: -20px;
+  right: -25px;
 }
 [dir=rtl] .slick-next {
   left: -25px;
   right: auto;
 }
 .slick-next:before {
-  content: "❯";
+  content: "→";
 }
 [dir=rtl] .slick-next:before {
-  content: "❮";
+  content: "←";
 }
 
 /* Dots */

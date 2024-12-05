@@ -1,18 +1,55 @@
-function toggleExpand(card) {
-    // Check if the clicked card is already expanded
-    const isExpanded = card.classList.contains('expanded');
+/*
+$.js = function (el) {
+    return $('[data-js=' + el + ']')
+};
 
-    // Collapse all cards
-    const cards = document.querySelectorAll('.card');
-    cards.forEach((c) => {
-        c.classList.remove('expanded');
-        c.querySelector('.expanded-content').style.display = 'none';
-    });
-
-    // If the clicked card was not expanded, expand it
-    if (!isExpanded) {
-        card.classList.add('expanded');
-        card.querySelector('.expanded-content').style.display = 'block';
-    }
+function carousel() {
+  $.js('timeline-carousel').slick({
+    infinite: false,
+    arrows: true,
+    dots: true,
+    autoplay: false,
+    speed: 1100,
+    slidesToShow: 4,
+    slidesToScroll:4,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+  });
 }
 
+carousel();*/
+
+
+
+$.js = function (el) {
+    return $('[data-js=' + el + ']')
+};
+
+function carousel() {
+  $.js('timeline-carousel').slick({
+    variableWidth:false,
+    infinite: false,
+    arrows: true,
+    dots: true,
+    autoplay: false,
+    speed: 1100,
+    slidesToShow: 4,
+    slidesToScroll:4,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+  });
+}
+
+carousel();
