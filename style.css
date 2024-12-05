@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #1d1d1e;
+    background-color: #303030;
     font-family: "Roboto", sans-serif;
 }
 
@@ -357,6 +357,13 @@ body {
     color: #fff;
 }
 
+.gold-bar {
+    display: none;
+    height: 20px;
+    background-color: #f6d77f;
+    margin: 0;
+}
+
 @media (max-width: 991px) {
     .nav-row {
         flex-direction: column;
@@ -371,5 +378,14 @@ body {
         width: 100%;
         top: 100%;
     }
+    .gold-bar {
+    display: block;
+    height: 20px;
+    background-color: #f6d77f;
+    margin: 0;
+    }
+    .tested_tried_true-logo {
+    width: 30%;
+}
 }
 
