@@ -55,7 +55,8 @@ body {
 
 .bbi-nav-background {
     background-image: url('images/bbi_background.jpg');
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
 }
 
 .bbi-menu-links {
@@ -85,6 +86,7 @@ body {
     color: #d4bb74 !important;
     font-size: 12px;
 }
+
 .toll-free {
     color: #f6d77f;
 }
