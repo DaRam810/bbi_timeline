@@ -411,5 +411,17 @@ body {
     .tested_tried_true-logo {
         width: 30%;
     }
+
+    .hover-underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 8px;
+        left: 0;
+        background-color: #000000;
+        transition: transform 0.25s ease-out;
+    }
 }
 
